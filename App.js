@@ -14,14 +14,14 @@ import SettingsScreen from './screens/SettingsScreen';
 export default class App extends React.Component {
   render() {
     const MainNavigator = createBottomTabNavigator({
-      Welcome: WelcomeScreen,
-      Auth: AuthScreen,
-      Main: createBottomTabNavigator({
-        Map: MapScreen,
-        Deck: DeckScreen,
-        Review: createStackNavigator({
-          Review: ReviewScreen,
-          Settings: SettingsScreen
+      welcome: WelcomeScreen,
+      auth: AuthScreen,
+      main: createBottomTabNavigator({
+        map: MapScreen,
+        deck: DeckScreen,
+        review: createStackNavigator({
+          review: ReviewScreen,
+          settings: SettingsScreen
         })
       })
     });
